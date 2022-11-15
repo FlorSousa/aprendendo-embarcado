@@ -1,0 +1,10 @@
+#include <16F628A.h>
+#fuses XT, NOWDT, NOPROTECT, NOPUT
+#use delay(clock=4MHz)
+
+void main(){
+    int saida = 0b00000010
+    while (true){
+       output_b(saida);
+    }
+}

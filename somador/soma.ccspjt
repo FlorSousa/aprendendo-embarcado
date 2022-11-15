@@ -1,0 +1,19 @@
+[PROJECT]
+Target=soma.hex
+Processor_Text=PIC16F628A
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+FileList=soma.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[soma.c]
+Type=4
+[mru-list]
+1=soma.c
+[Opened Files]
+1=soma.c
+2=
+[Units]
+Count=1
+1=soma (main)
