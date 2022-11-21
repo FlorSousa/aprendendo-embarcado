@@ -1,0 +1,42 @@
+#include <16F628A.h>
+#fuses XT, NOWDT, NOPROTECT, NOPUT
+#use delay(clock=4MHz)
+
+void main(){
+    enum num{
+        one=0b00101000,
+        two=0b11001101,
+        three=0b01101101,
+        four=0b00101011,
+        five=0b01100111,
+    };
+    /*
+        B0 g
+        B1 f
+        B2 a
+        B3 b
+        B4 define qual display vai trabalhar
+        B5 c
+        B6 d
+        B7 e
+
+    */
+    int number = one;
+    while (true){
+        /*
+        output_b(one);
+        delay_ms(1000);
+        output_b(two);
+        delay_ms(1000);
+        output_b(three);
+        delay_ms(1000);
+        output_b(four);
+        delay_ms(1000);
+        output_b(five);
+        delay_ms(1000);
+        */
+        output_b(number);
+        delay_ms(1000); 
+        number = num.two;
+    }
+}

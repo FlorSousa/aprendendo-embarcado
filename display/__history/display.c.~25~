@@ -1,0 +1,35 @@
+#include <16F628A.h>
+#fuses XT, NOWDT, NOPROTECT, NOPUT
+#use delay(clock=4MHz)
+
+void main(){
+    /*
+        B0 g
+        B1 f
+        B2 a
+        B3 b
+        B4 define qual display vai trabalhar
+        B5 c
+        B6 d
+        B7 e
+
+    */
+
+    while (true){
+    /*
+       output_high(PIN_B5);
+       output_high(PIN_B3);
+       output_high(PIN_B2);
+       output_high(PIN_B1);
+       output_high(PIN_B7);
+       output_high(PIN_B6);
+       output_high(PIN_B0);
+    */
+       output_b(0b00000001);
+
+
+
+
+       //output_b(8);
+    }
+}
